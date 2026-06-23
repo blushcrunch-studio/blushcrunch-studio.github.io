@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fan Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" />
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:rgb(235,235,235);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    text-align:center;
+}
+
+.section-title{
+    font-size:20px;
+    margin-bottom:14px;
+    font-weight:700;
+    color:#111;
+}
+
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:24px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+h1{
+    font-size:clamp(2rem,5vw,3rem);
+    font-weight:700;
+    color:#111;
+    margin-bottom:14px;
+}
+
+.fade-text {
+    display: inline-block;
+    min-width: 12ch;
+    text-align: left;
+    transition: opacity .5s ease;
+}
+.badges{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:28px;
+}
+
+.badge{
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    color:white;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    transition:.2s;
+    cursor:default;
+}
+
+.badge:hover{
+    transform:translateY(-2px) scale(1.05);
+}
+
+.badge.purple{background:linear-gradient(135deg,#8e2de2,#4a00e0);}
+.badge.blue{background:linear-gradient(135deg,#2193b0,#6dd5ed);}
+.badge.green{background:linear-gradient(135deg,#11998e,#38ef7d);}
+.badge.orange{background:linear-gradient(135deg,#ff8008,#ffc837);}
+
+
+.creation-icon{
+    width:42px;
+    height:42px;
+    border-radius:10px;
+}
+
+.creation-info{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.link-card{
+    background:white;
+    text-decoration:none;
+    color:#111;
+    border-radius:18px;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    transition:.2s;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.link-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.link-icon{
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.link-name{
+    font-size:16px;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img class="profile"
+        src="https://www.image2url.com/r2/default/images/1782197456131-edad087b-df3f-4891-bbd3-47f6823d500a.jpeg">
+
+    <h1>
+        Hi, I'm <span class="fade-text" id="changingText">Fan</span>
+    </h1>
+
+    <!-- BADGES -->
+    <div class="badges">
+        <div class="badge purple">Roblox Scripter</div>
+        <div class="badge purple">Top Tier Skid</div>
+        <div class="badge purple">#1 H*tlinker</div>
+        <div class="badge orange">Lazy AF</div>
+        <div class="badge orange">#1 Netherlands GrandLARPER</div>
+        <div class="badge blue">R&D Fan</div>
+        <div class="badge green">Panromantic</div>
+        <div class="badge green">Asexual</div>
+    </div>
+
+    <!-- MAIN LINKS -->
+    <div class="links">
+
+        <a href="https://discord.gg/sNM8YJmG" class="link-card" target="_blank">
+            <img class="link-icon" src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png">
+            <div class="link-name">Discord</div>
+        </a>
+
+        <a href="https://scriptblox.com/u/_qwelver" class="link-card" target="_blank">
+            <img class="link-icon" src="https://icons.iconarchive.com/icons/pictogrammers/material-light/128/script-icon.png">
+            <div class="link-name">Scriptblox</div>
+        </a>
+
+        <a href="https://www.roblox.com/share?code=fa7fe9e7831b914fb00eadb092ceb055&type=Profile&source=ProfileShare&stamp=1782198059339"
+           class="link-card" target="_blank">
+            <img class="link-icon" src="https://tse4.mm.bing.net/th/id/OIP.6yAwNq8r-TElnZwq4lSyzQHaHa">
+            <div class="link-name">Roblox</div>
+        </a>
+
+        <a href="https://vt.tiktok.com/ZSCddWCwG/" class="link-card" target="_blank">
+            <img class="link-icon" src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png">
+            <div class="link-name">TikTok</div>
+        </a>
+        <a href="https://youtube.com/@qweelver?si=F7uUXoeLxBD25xY4" class="link-card" target="_blank">
+            <img class="link-icon" src="https://img.magnific.com/premium-photo/youtube-logo-illustration-icon-vector_895118-5305.jpg?w=2000">
+            <div class="link-name">Youtube</div>
+        </a>
+
+        <a href="https://github.com/blushcrunch-studio" class="link-card" target="_blank">
+            <img class="link-icon" src="https://www.pngall.com/wp-content/uploads/13/Github-Logo-Transparent.png">
+            <div class="link-name">Github</div>
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+const names = ["Fan","qweelver","_qwelver",".qwelver","biushcrunch","BrilliantFan67"];
+let index = 0;
+const text = document.getElementById("changingText");
+
+setInterval(() => {
+    text.style.opacity = 0;
+
+    setTimeout(() => {
+        index = (index + 1) % names.length;
+        text.textContent = names[index];
+        text.style.opacity = 1;
+    }, 500);
+}, 2500);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-lua.min.js"></script>
+
+</body>
+</html>
